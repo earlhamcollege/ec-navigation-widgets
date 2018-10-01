@@ -1,6 +1,6 @@
 {
   "name": "ec-navigation-widgets",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Earlham College Navigation Widget",
   "main": "index.js",
   "scripts": {
