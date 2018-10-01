@@ -1,0 +1,47 @@
+// Color Variables
+@ec-nav-font-color: rgba(0,0,0,0.85);
+@ec-nav-bg: #fff;
+@ec-nav-hover: #f4f4f4;
+@ec-nav-active: #57667B;
+
+.ec-nav {
+	padding: 0px 5px;
+	background-color: @ec-nav-bg;
+
+	ul li ul {
+		display: block;
+	}
+
+	ul>li span:hover {
+	    display: block;
+	    width: 100%;
+		background-color: @ec-nav-hover;
+		ul>li span:hover {
+			display: block;
+		    width: 100%;
+			background-color: @ec-nav-hover;
+		}
+	}
+	
+	a:link {
+		text-decoration: none;
+		color: @ec-nav-font-color;
+	}
+	a:visited {
+		text-decoration: none;
+		color: @ec-nav-font-color;
+	}
+	a:hover {
+	    color: @ec-nav-font-color;
+	}
+
+	a:active {
+	    text-decoration: none;
+	}
+}
+
+.ec-nav-grand {
+	position: relative;
+	padding: 1px 10px;
+	font-size: 90%;
+}

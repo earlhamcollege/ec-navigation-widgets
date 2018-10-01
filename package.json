@@ -1,0 +1,22 @@
+{
+  "name": "ec-navigation-widgets",
+  "version": "1.0.0",
+  "description": "Earlham College Navigation Widget",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/earlhamcollege/ec-navigation-widgets.git"
+  },
+  "keywords": [
+    "apostrophe-cms"
+  ],
+  "author": "Giorgi Kharshiladze",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/earlhamcollege/ec-navigation-widgets/issues"
+  },
+  "homepage": "https://github.com/earlhamcollege/ec-navigation-widgets#readme"
+}
