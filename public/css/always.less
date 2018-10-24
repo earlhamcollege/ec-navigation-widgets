@@ -39,9 +39,21 @@
 	    text-decoration: none;
 	}
 }
+.ec-nav-body .icon {
+	display:none;
+}
 
 .ec-nav-grand {
 	position: relative;
 	padding: 1px 10px;
 	font-size: 90%;
+}
+
+@media screen and (max-width: 600px) {
+  .ec-nav-body a.icon {
+    display: inline-block;
+  }
+  .ec-nav-body li {
+  	display: none;
+  }
 }

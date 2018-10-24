@@ -1,22 +1,49 @@
 {
-  "name": "ec-navigation-widgets",
-  "version": "1.0.2",
-  "description": "Earlham College Navigation Widget",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "_from": "ec-navigation-widgets@latest",
+  "_id": "ec-navigation-widgets@1.0.3",
+  "_inBundle": false,
+  "_integrity": "sha512-vqYF9JncLs/vwXKnsxh/V2aAHmI8kf44Gj+xiXaIUNlsfnu3GkCqbljpq87Nt/Aerkzdc6hQCQgX8QneK4qnHw==",
+  "_location": "/ec-navigation-widgets",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "ec-navigation-widgets@latest",
+    "name": "ec-navigation-widgets",
+    "escapedName": "ec-navigation-widgets",
+    "rawSpec": "latest",
+    "saveSpec": null,
+    "fetchSpec": "latest"
   },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/ec-navigation-widgets/-/ec-navigation-widgets-1.0.2.tgz",
+  "_shasum": "bd96f572a1867dd8642f14346a38819526f1c0b4",
+  "_spec": "ec-navigation-widgets@latest",
+  "_where": "/Users/giorgi/Github/earlham",
+  "author": {
+    "name": "Giorgi Kharshiladze"
+  },
+  "bugs": {
+    "url": "https://github.com/earlhamcollege/ec-navigation-widgets/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "Earlham College Navigation Widget",
+  "homepage": "https://github.com/earlhamcollege/ec-navigation-widgets#readme",
+  "keywords": [
+    "apostrophe-cms"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "name": "ec-navigation-widgets",
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/earlhamcollege/ec-navigation-widgets.git"
   },
-  "keywords": [
-    "apostrophe-cms"
-  ],
-  "author": "Giorgi Kharshiladze",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/earlhamcollege/ec-navigation-widgets/issues"
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "homepage": "https://github.com/earlhamcollege/ec-navigation-widgets#readme"
+  "version": "1.0.3"
 }
