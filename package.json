@@ -1,26 +1,27 @@
 {
-  "_from": "ec-navigation-widgets@latest",
+  "_from": "ec-navigation-widgets@1.0.3",
   "_id": "ec-navigation-widgets@1.0.3",
   "_inBundle": false,
-  "_integrity": "sha512-vqYF9JncLs/vwXKnsxh/V2aAHmI8kf44Gj+xiXaIUNlsfnu3GkCqbljpq87Nt/Aerkzdc6hQCQgX8QneK4qnHw==",
+  "_integrity": "sha512-6JU7wfZKTMZnqdSaS6ut7RoVOQFuOQoxQLh+SoRYtapyKN/9zIwOz4IY2Tbhgh2wTX9pDAKWgcfT81NCPqEAww==",
   "_location": "/ec-navigation-widgets",
   "_phantomChildren": {},
   "_requested": {
-    "type": "tag",
+    "type": "version",
     "registry": true,
-    "raw": "ec-navigation-widgets@latest",
+    "raw": "ec-navigation-widgets@1.0.3",
     "name": "ec-navigation-widgets",
     "escapedName": "ec-navigation-widgets",
-    "rawSpec": "latest",
+    "rawSpec": "1.0.3",
     "saveSpec": null,
-    "fetchSpec": "latest"
+    "fetchSpec": "1.0.3"
   },
   "_requiredBy": [
+    "#USER",
     "/"
   ],
-  "_resolved": "https://registry.npmjs.org/ec-navigation-widgets/-/ec-navigation-widgets-1.0.2.tgz",
-  "_shasum": "bd96f572a1867dd8642f14346a38819526f1c0b4",
-  "_spec": "ec-navigation-widgets@latest",
+  "_resolved": "https://registry.npmjs.org/ec-navigation-widgets/-/ec-navigation-widgets-1.0.3.tgz",
+  "_shasum": "eefa369fbdfc455e42f5a386d15948761b06894b",
+  "_spec": "ec-navigation-widgets@1.0.3",
   "_where": "/Users/giorgi/Github/earlham",
   "author": {
     "name": "Giorgi Kharshiladze"

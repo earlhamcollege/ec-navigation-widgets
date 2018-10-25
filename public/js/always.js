@@ -1,3 +1,3 @@
 function myFunction() {
-	$(".ec-nav-body li").toggle();
+	$(".ec-nav-body li").slideToggle();
 }

@@ -3,7 +3,7 @@
     <div class="ec-nav-body">
       {% if data.page.orphan == false %}
       <ul>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i> Page Menu</a>
+        <a href="javascript:void(0);" class="visible-xs-inline icon" onclick="myFunction()"><i class="fa fa-bars"></i> Page Menu</a>
       {% for child in data.page._children %}
         <li style="position: relative;"><span><a href="{{ child.slug }}">{{ child.title }}</a></span>
           {% if child.orphan == false and data.widget.hideChildren == false %}

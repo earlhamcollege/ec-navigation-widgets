@@ -3,6 +3,8 @@
 @ec-nav-bg: #fff;
 @ec-nav-hover: #f4f4f4;
 @ec-nav-active: #57667B;
+@ec-nav-button-bg: #56667c;
+@ec-nav-button-bg-active: #fff;
 
 .ec-nav {
 	padding: 0px 5px;
@@ -41,6 +43,16 @@
 }
 .ec-nav-body .icon {
 	display:none;
+    background: @ec-nav-button-bg;
+    padding: 7px 12px;
+    color: @ec-nav-bg !important;
+    border: 3px solid @ec-nav-bg;
+}
+.ec-nav-body .icon:focus {
+    background: @ec-nav-button-bg-active;
+    padding: 7px 12px;
+    color: @ec-nav-button-bg !important;
+    border: 3px solid @ec-nav-button-bg;
 }
 
 .ec-nav-grand {
@@ -49,11 +61,8 @@
 	font-size: 90%;
 }
 
-@media screen and (max-width: 600px) {
-  .ec-nav-body a.icon {
-    display: inline-block;
-  }
-  .ec-nav-body li {
-  	display: none;
-  }
+@media screen and (max-width: 767px) {
+	.ec-nav-body li {
+		display: none;
+	}
 }
