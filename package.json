@@ -1,50 +1,22 @@
 {
-  "_from": "ec-navigation-widgets@1.0.3",
-  "_id": "ec-navigation-widgets@1.0.3",
-  "_inBundle": false,
-  "_integrity": "sha512-6JU7wfZKTMZnqdSaS6ut7RoVOQFuOQoxQLh+SoRYtapyKN/9zIwOz4IY2Tbhgh2wTX9pDAKWgcfT81NCPqEAww==",
-  "_location": "/ec-navigation-widgets",
-  "_phantomChildren": {},
-  "_requested": {
-    "type": "version",
-    "registry": true,
-    "raw": "ec-navigation-widgets@1.0.3",
-    "name": "ec-navigation-widgets",
-    "escapedName": "ec-navigation-widgets",
-    "rawSpec": "1.0.3",
-    "saveSpec": null,
-    "fetchSpec": "1.0.3"
-  },
-  "_requiredBy": [
-    "#USER",
-    "/"
-  ],
-  "_resolved": "https://registry.npmjs.org/ec-navigation-widgets/-/ec-navigation-widgets-1.0.3.tgz",
-  "_shasum": "eefa369fbdfc455e42f5a386d15948761b06894b",
-  "_spec": "ec-navigation-widgets@1.0.3",
-  "_where": "/Users/giorgi/Github/earlham",
-  "author": {
-    "name": "Giorgi Kharshiladze"
-  },
-  "bugs": {
-    "url": "https://github.com/earlhamcollege/ec-navigation-widgets/issues"
-  },
-  "bundleDependencies": false,
-  "deprecated": false,
-  "description": "Earlham College Navigation Widget",
-  "homepage": "https://github.com/earlhamcollege/ec-navigation-widgets#readme",
-  "keywords": [
-    "apostrophe-cms"
-  ],
-  "license": "MIT",
-  "main": "index.js",
   "name": "ec-navigation-widgets",
-  "repository": {
-    "type": "git",
-    "url": "git+ssh://git@github.com/earlhamcollege/ec-navigation-widgets.git"
-  },
+  "version": "1.0.4",
+  "description": "ec-navigation-widgets",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "version": "1.0.3"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/earlhamcollege/ec-navigation-widgets.git"
+  },
+  "keywords": [
+    "apostrophe-cms"
+  ],
+  "author": "Giorgi Kharshiladze",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/earlhamcollege/ec-navigation-widgets/issues"
+  },
+  "homepage": "https://github.com/earlhamcollege/ec-navigation-widgets#readme"
 }
