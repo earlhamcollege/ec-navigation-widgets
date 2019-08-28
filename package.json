@@ -1,6 +1,6 @@
 {
   "name": "ec-navigation-widgets",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "Navigation Widget for Apostrophe CMS",
   "main": "index.js",
   "scripts": {
