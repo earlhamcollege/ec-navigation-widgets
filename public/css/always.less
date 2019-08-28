@@ -1,43 +1,64 @@
-// Color Variables
-@ec-nav-font-color: rgba(0,0,0,0.85);
-@ec-nav-bg: #fff;
-@ec-nav-hover: #f4f4f4;
-
-
+@ec-nav-active: #57667B;
+@ec-nav-button-bg: #56667c;
+@ec-nav-button-bg-active: #fff;
 
 .ec-nav {
+	padding: 0px 5px;
 	background-color: @ec-nav-bg;
-	ul {
-		list-style-type: none;
-	}
-	h2.ec-nav-title {
-		font-size: 2em;
-    	font-weight: bold;
-    	border-bottom: 1px solid #000;
-    	margin-bottom: .5em;
-	}
-	li a {
+
+	ul li ul {
 		display: block;
 	}
-	li a:link {
+
+	ul>li span:hover {
+	    display: block;
+	    width: 100%;
+		background-color: @ec-nav-hover;
+		ul>li span:hover {
+			display: block;
+		    width: 100%;
+			background-color: @ec-nav-hover;
+		}
+	}
+	
+	a:link {
 		text-decoration: none;
 		color: @ec-nav-font-color;
 	}
-	li a:visited {
+	a:visited {
 		text-decoration: none;
 		color: @ec-nav-font-color;
 	}
-	li a:hover, a:focus {
-		background-color: @ec-nav-hover;
+	a:hover {
+	    color: @ec-nav-font-color;
 	}
-	li>ul>li a:hover {
-		background-color: @ec-nav-hover;
-		display: block;
+
+	a:active {
+	    text-decoration: none;
 	}
 }
+.ec-nav-body .icon {
+	display:none;
+    background: @ec-nav-button-bg;
+    padding: 7px 12px;
+    color: @ec-nav-bg !important;
+    border: 3px solid @ec-nav-bg;
+}
+.ec-nav-body .icon:focus {
+    background: @ec-nav-button-bg-active;
+    padding: 7px 12px;
+    color: @ec-nav-button-bg !important;
+    border: 3px solid @ec-nav-button-bg;
+}
 
-// .ec-nav-grand {
-// 	display: block !important;
-// 	padding: 3px 10px;
-// 	font-size: 90%;
-// }
+.ec-nav-grand {
+	position: relative;
+	padding: 1px 10px;
+	font-size: 90%;
+}
+
+@media screen and (max-width: 767px) {
+	.ec-nav-body li {
+		display: none;
+	}
+}

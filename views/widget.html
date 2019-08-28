@@ -1,20 +1,17 @@
-<div class="ec-nav" style="height: auto;">
-  <h2 class="ec-nav-title">{{ data.page.title }}</h2>
-
-  {% if data.page._children | length %}
-      <ul class="ec-nav-ul">
+<div class="ec-nav" style="border:1px solid #000;height: auto;">
+  <h3 id="ec-nav-title">{{ data.page.title }}</h3>
+    <div class="ec-nav-body">
+      {% if data.page.orphan == false %}
+      <ul>
+        <a href="javascript:void(0);" class="visible-xs-inline icon" onclick="myFunction()"><i class="fa fa-bars"></i> Page Menu</a>
       {% for child in data.page._children %}
-        <li class="ec-nav-child"><a href="{{ child.slug }}"><h3>{{ child.title }}</h3></a>
-          {% if child._children | length %}
+        <li style="position: relative;"><span><a href="{{ child.slug }}">{{ child.title }}</a></span>
+          {% if child.orphan == false and data.widget.hideChildren == false %}
             <ul class="ec-nav-grand">
               {% for grand in child._children %}
-              <li><a href="{{ grand.slug }}"><h4>{{ grand.title }}</h4></a></li>
+              <li><span><a href="{{ grand.slug }}">{{ grand.title }}</a></span></li>
               {% endfor %}
             </ul>
           {% endif %}
         </li>
-
-      {% endfor %}
-      </ul>
-  {% endif %}
 </div>
