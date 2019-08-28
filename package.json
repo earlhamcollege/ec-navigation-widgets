@@ -1,0 +1,24 @@
+{
+  "name": "ec-navigation-widgets",
+  "version": "1.0.1",
+  "description": "Navigation Widget for Apostrophe CMS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/earlhamcollege/ec-navigation-widgets.git"
+  },
+  "keywords": [
+    "apostrophe-cms",
+    "apostrophe",
+    "navigation"
+  ],
+  "author": "Giorgi Kharshiladze",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/earlhamcollege/ec-navigation-widgets/issues"
+  },
+  "homepage": "https://github.com/earlhamcollege/ec-navigation-widgets#readme"
+}
