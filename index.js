@@ -12,6 +12,7 @@ module.exports = {
 		].concat(options.addFields || [])
 	},
   	construct: function (self, options) {
+  		self.pushAsset('stylesheet', 'variables', { when: 'always' });
     	self.pushAsset('stylesheet', 'always', { when: 'always' });
     	self.pushAsset('stylesheet', 'custom', { when: 'always' });
     	self.pushAsset('script', 'always', { when: 'always' });
