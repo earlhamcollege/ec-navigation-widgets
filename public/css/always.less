@@ -1,9 +1,17 @@
-@import "_variables.less";
+h2.ec-nav-title {
+	font-size: 3em !important;
+	color: red;
+}
+
 
 .ec-nav {
+	border: 1px solid;
 	padding: 0px 5px;
-	background-color: @ec-nav-bg;
+	background-color: #000;
 
+	h2.ec-nav-title {
+		font-size: 3em !important;
+	}
 	ul li ul {
 		display: block;
 	}
@@ -11,48 +19,29 @@
 	ul>li span:hover {
 	    display: block;
 	    width: 100%;
-		background-color: @ec-nav-hover;
+		background-color: #000;
 		ul>li span:hover {
 			display: block;
 		    width: 100%;
-			background-color: @ec-nav-hover;
+			background-color: #000;
 		}
 	}
 	
 	a:link {
 		text-decoration: none;
-		color: @ec-nav-font-color;
+		color: #000;
 	}
 	a:visited {
 		text-decoration: none;
-		color: @ec-nav-font-color;
+		color: #000;
 	}
 	a:hover {
-	    color: @ec-nav-font-color;
+	    color: #000;
 	}
 
 	a:active {
 	    text-decoration: none;
 	}
-}
-.ec-nav-body .icon {
-	display:none;
-    background: @ec-nav-button-bg;
-    padding: 7px 12px;
-    color: @ec-nav-bg !important;
-    border: 3px solid @ec-nav-bg;
-}
-.ec-nav-body .icon:focus {
-    background: @ec-nav-button-bg-active;
-    padding: 7px 12px;
-    color: @ec-nav-button-bg !important;
-    border: 3px solid @ec-nav-button-bg;
-}
-
-.ec-nav-grand {
-	position: relative;
-	padding: 1px 10px;
-	font-size: 90%;
 }
 
 @media screen and (max-width: 767px) {

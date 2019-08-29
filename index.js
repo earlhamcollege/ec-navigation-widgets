@@ -1,6 +1,6 @@
 module.exports = {
 	extend: 'apostrophe-widgets',
-  	label: 'Ec Navigation',
+  	label: 'EC Navigation',
   	beforeConstruct: function(self, options) {
 		options.addFields = [
 		{
@@ -11,9 +11,13 @@ module.exports = {
 		}
 		].concat(options.addFields || [])
 	},
-  	construct: function (self, options) {
-    	self.pushAsset('stylesheet', 'always', { when: 'always' });
-    	self.pushAsset('stylesheet', 'custom', { when: 'always' });
-    	self.pushAsset('script', 'always', { when: 'always' });
-  	}
+	construct: function(self, options) {
+		var superPushAssets = self.pushAssets;
+
+	    self.pushAssets = function() {
+	      superPushAssets();
+	      self.pushAsset('stylesheet','');
+	      self.pushAsset('stylesheet','custom');
+	    }
+	}
 };
