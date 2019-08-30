@@ -16,8 +16,9 @@ module.exports = {
 
 	    self.pushAssets = function() {
 	      superPushAssets();
-	      self.pushAsset('stylesheet','');
+	      self.pushAsset('stylesheet','always');
 	      self.pushAsset('stylesheet','custom');
+	      self.pushAsset('scripts','always');
 	    }
 	}
 };

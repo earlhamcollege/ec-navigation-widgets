@@ -1,20 +1,55 @@
-<div class="ec-nav" style="height: auto;">
-  <h2 class="ec-nav-title">{{ data.page.title }}</h2>
 
-  {% if data.page._children | length %}
-      <ul class="ec-nav-ul">
-      {% for child in data.page._children %}
-        <li class="ec-nav-child"><a href="{{ child.slug }}"><h3>{{ child.title }}</h3></a>
-          {% if child._children | length %}
-            <ul class="ec-nav-grand">
-              {% for grand in child._children %}
-              <li><a href="{{ grand.slug }}"><h4>{{ grand.title }}</h4></a></li>
+
+<div class="ec-nav" style="height: auto;">
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12">
+    <h2 class="ec-nav-title">{{ data.page.title }} <i class="fa fa-plus-circle" aria-hidden="true"></i></h2>
+    </div>
+    <div class="col-sm-12 d-block d-md-none">
+      {% if data.page._children | length %}
+      <select id="sub-menu" name="sub-menu">
+        <option>Navigate to...</option>
+        {% for child in data.page._children %}
+        <option value="{{ child.slug }}">{{ child.title }}</option>
+        {% if child._children | length %}
+          {% for grand in child._children %}
+            <option value="{{ grand.slug }}">- {{ grand.title }}</option>
+          {% endfor %}
+        {% endif %}
+        {% endfor %}
+      </select>
+      {% endif %}
+    </div>
+
+    <aside class="sidebar col-md-12 mb-5">
+      {% if data.page._children | length %}
+      <div class="dynamicDiv" id="dd.0.4.0">
+        <div class="sidebar-wrapper">
+          <nav>
+            <ul class="nolist d-none d-md-block">
+              {% for child in data.page._children %}
+              <li class="{% if child._children | length %}has-grand{% endif %}">
+                <h3><a role="button" aria-expanded="false" href="{{ child.slug }}">{{ child.title }}</a>
+                  {% if child._children | length %}
+                <a href="#{{child._id}}" data-toggle="collapse" aria-controls="{{child._id}}"><i class="fa fa-plus" aria-hidden="true"></i></a>
+              {% endif %}
+              </h3>
+                {% if child._children | length %}
+
+                      <ul class="ec-nav-grand collapse" id="{{child._id}}">
+                        {% for grand in child._children %}
+                        <li><a href="{{ grand.slug }}"><h4>{{ grand.title }}</h4></a></li>
+                        {% endfor %}
+                      </ul>
+                    {% endif %}
+              </li>
               {% endfor %}
             </ul>
-          {% endif %}
-        </li>
-
-      {% endfor %}
-      </ul>
-  {% endif %}
+          </nav>
+        </div><!-- .sidebar-wrapepr -->
+      </div>
+      {% endif %}
+    </aside>
+  </div>
 </div>
