@@ -13,12 +13,12 @@ module.exports = {
 	},
 	construct: function(self, options) {
 		var superPushAssets = self.pushAssets;
-
-	    self.pushAssets = function() {
-	      superPushAssets();
-	      self.pushAsset('stylesheet','always');
-	      self.pushAsset('stylesheet','custom');
-	      self.pushAsset('scripts','always');
+		
+		self.pushAssets = function() {
+			superPushAssets();
+	    	self.pushAsset('stylesheet','always');
+	    	self.pushAsset('stylesheet','custom');
+	    	self.pushAsset('script','always');
 	    }
 	}
 };
