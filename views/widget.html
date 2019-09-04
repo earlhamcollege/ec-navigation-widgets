@@ -1,12 +1,9 @@
 
 
 <div class="ec-nav" style="height: auto;">
-<div class="container">
-  <div class="row">
-    <div class="col-sm-12">
-    <h2 class="ec-nav-title">{{ data.page.title }} <i class="fa fa-plus-circle" aria-hidden="true"></i></h2>
-    </div>
-    <div class="col-sm-12 d-block d-md-none">
+<div class="container-fluid mt-2">
+    <h2 class="ec-nav-title">{{ data.page.title }} <i class="fa fa-plus-circle d-none d-md-block" aria-hidden="true"></i></h2>
+    <div class="d-block d-md-none">
       {% if data.page._children | length %}
       <select id="sub-menu" name="sub-menu">
         <option>Navigate to...</option>
@@ -22,7 +19,7 @@
       {% endif %}
     </div>
 
-    <aside class="sidebar col-md-12 mb-5">
+    <aside class="sidebar mb-5">
       {% if data.page._children | length %}
       <div class="dynamicDiv" id="dd.0.4.0">
         <div class="sidebar-wrapper">
